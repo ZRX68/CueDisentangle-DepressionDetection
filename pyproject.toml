@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "depression-multimodal-classification"
+version = "0.1.0"
+description = "PyTorch training code for DVLOG_C and LMVD_C depression classification experiments."
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "Pillow",
+    "scikit-learn",
+    "torch",
+    "torchvision",
+    "tqdm",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
